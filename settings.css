@@ -1,0 +1,119 @@
+body{
+    background-color: #444444;
+    color: white;
+}
+.return{
+    margin-left: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    margin-top: -20px;
+}
+.box0{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-betwwen;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.title{
+    color: white;
+    font-size: 2rem;
+    font-family: serif;
+    margin-left: 19px;
+}
+body.light-mode .title{
+    color: #444444;
+}
+.logo{
+    height: 30px;
+    width: 30px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.container{
+    background-color: #323232;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #323232;
+}
+body.light-mode .container{
+    background-color: #d5f4fd;
+    box-shadow: 0 0 7px #d5f4fd;
+}
+.box1{
+   margin-top: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 30px;
+   margin-left: -10px;
+}
+.theme{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+body.light-mode .theme{
+    color: black
+}
+.c{
+    position: relative;
+    background-color: white;
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-radius: 40px;
+}
+.btn{
+    position: absolute;
+    background-color: #444444;
+    height: 26px;
+    width: 26px;
+    border: none;
+    border-radius: 30px;
+    top: 2px;
+    left: 3px;
+    box-shadow: 0 0 5px #444444;
+    transition: 200ms;
+}
+.light,
+.dark{
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    border: none;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
+    top: 4px;
+    left: 5px;
+}
+.light{
+    left: 34px;
+    top: 4px;
+}
+body.light-mode{
+    background-color: white;
+}
+body.light-mode .c{
+    background-color: #444444;
+}
+body.light-mode .btn{
+    background-color: white;
+    top: 3px;
+    left: 32px;
+    height: 24px;
+    width: 24px;
+    box-shadow: 0 0 3px white;
+    transition: 200ms;
+}
+body.light-mode .state{
+    color: #444444;
+}
+
+

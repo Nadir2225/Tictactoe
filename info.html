@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="info.css">
+</head>
+<body id="body">
+    <div class="box0">
+    <div onclick="goback()">
+        <img class="return" src="return.png">
+    </div>
+    <div class="title1">Tic-Tac-Toe</div>
+    <img class="logo" src="logo.png">
+    </div>
+    <div class="box1">
+       <div class="title">How would You like to play</div> 
+    </div>
+    <div class="box2">
+        <div class="radio1" id="radio1">
+            <input type="radio" id="choice1" name="choice" onclick="check()">
+            <div class="c1">
+                <img src="friends.png">
+                <label>multiplayer</label>
+            </div>
+        </div>
+        <div class="radio2" id="radio2">
+            <input type="radio" id="choice2" name="choice" onclick="check()">
+            <div class="c2">
+                <img src="bot.png">
+                <label>One player</label>
+            </div>
+        </div>
+    </div>
+    <div class="box3" id="box3">
+      <div class="name1">
+          <input type="text" class="input one" id="input1" required="required">
+          <label class="label onee">Player 1</label>
+      </div>
+      <div class="name2" id="name22">
+          <input type="text" class="input two" id="input2" required="required">
+          <label class="label twoo">Player 2</label>
+      </div>
+    </div>  
+    <div class="box4" id="box4">
+        <a href="game.html">
+          <button class="start" type="submit" id="start" onclick="save()">
+              Start
+          </button>
+        </a>
+    </div>
+    <script src="info.js"></script>  
+</body>
+</html>
