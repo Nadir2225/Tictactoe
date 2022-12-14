@@ -81,6 +81,7 @@ body.light-mode .title{
     font-size: 2.6rem;
     padding-left: 2.1rem;
     z-index: 1;
+    font-family: arial;
 }
 body.light-mode .input{
     color: grey;
@@ -94,6 +95,7 @@ body.light-mode .input{
     left: 2.1rem;
     top: 2.4rem;
     transition: 200ms;
+    font-family: arial;
 }
 body.light-mode .label{
     color: #444444;
