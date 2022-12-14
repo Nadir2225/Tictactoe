@@ -1,0 +1,188 @@
+body{
+    position: relative;
+    background-color: #444444;
+}
+body.light-mode {
+    background-color: white;
+}
+.box0{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 3.1rem;
+}
+.title1{
+    color: white;
+    font-size: 6rem;
+    font-family: serif;
+    margin-left: 0.8rem;
+}
+body.light-mode .title1{
+    color: #444444;
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+.title{
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 6rem;
+    margin-left: 3.5rem;
+}
+body.light-mode .title{
+    color: #444444;
+}
+.box2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 7rem;
+    column-gap: 3.5rem;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+    margin-top: 9.4rem;
+    margin-left: 10px;
+    display: none;
+}
+.box4{
+    display:flex;
+    align-items: end;
+    justify-content: end;
+    display: none;
+    transition: 200ms;
+}
+.name1,
+.name2{
+    position: relative;
+}
+.return{
+    margin-left: 2rem;
+    width: 5.8rem;
+    height: 5.8rem;
+    margin-top: -3rem;
+}
+.input{
+    width: 45rem;
+    height: 6.5rem;
+    outline: none;
+    border: 0.4rem solid white;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    color: white;
+    font-size: 2.6rem;
+    padding-left: 2.1rem;
+    z-index: 1;
+}
+body.light-mode .input{
+    color: grey;
+    border-color: grey;
+    box-shadow: 0.1rem 0.2rem 0.8rem grey;
+}
+.label{
+    color: white;
+    position: absolute;
+    font-size: 2.6rem;
+    left: 2.1rem;
+    top: 2.4rem;
+    transition: 200ms;
+}
+body.light-mode .label{
+    color: #444444;
+}
+.input:focus{
+    border-color: #18FFFF;
+}
+body.light-mode .input:focus{
+    border-color: #13e2d9;
+}
+.input:focus ~ .label,
+.input:valid ~ .label{
+    transition: 200ms;
+    top: -1.2rem;
+    left: 2.2rem;
+    background-color: #444444;
+    color: #18ffff;
+    font-size: 2.2rem;
+    padding: 0px 0.3rem;
+    z-index:2;
+}
+body.light-mode 
+.input:focus ~ .label{
+    background-color: white;
+    color: #13e2d9;
+}
+body.light-mode
+.input:valid ~ .label{
+    background-color: white;
+}
+.start{
+    margin-top: 9rem;
+    margin-right: 5.2rem;
+    width: 18rem;
+    height: 6.1rem;
+    border: 0.4rem solid #2beaff;
+    border-radius: 10rem;
+    background-color: white;
+    color: #2beaff;
+    font-size: 2.6rem;
+    opacity: 0.4;
+}
+body.light-mode .start{
+    background-color: #13e2d9;
+    color: white;
+    border: none;
+}
+.radio1 img,
+.radio2 img{
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1.5rem;
+}
+.radio1,
+.radio2{
+    background-color: transparent;
+    border: 0.4rem solid #18ffff;
+    border-radius: 2rem;
+    position: relative;
+    width: 16rem;
+    height: 18rem;
+    transition: 100ms;
+}
+body.light-mode
+.radio1{
+    border-color: #13e2d9;
+}
+body.light-mode
+.radio2{
+    border-color: #13e2d9;
+}
+.radio1 input,
+.radio2 input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+.c1,
+.c2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.multi{
+    font-size: 2.6rem;
+    margin-top: -0.5rem;
+}

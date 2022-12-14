@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="box0">
+        
+    <a href="info.html">
+        <img class="return" src="return.png">
+    </a>
+    <div class="title">Tic-Tac-Toe</div>
+    <img class="logo" src="logo.png">
+    <div class="pausediv">
+        <img class="pause" src="pause.png" onclick="pau()">
+    </div>
+    </div>
+    <div class="box1">
+        <div class="score1">
+            <div class="oo" id="scoree1">0</div>
+        </div>
+        <div class="player1">
+            <img class="x" src="x.png">
+            <div class="xname">
+                player1
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="case c1" id="c1" value="nadir" onclick="check(c1)">
+            <img src="">
+        </div>
+        <div class="case c2" id="c2" onclick="check(c2)" >
+            <img src="">
+        </div>
+        <div class="case c3" id="c3" onclick="check(c3)">
+            <img src="" alt="">
+        </div>
+        <div class="case c4" id="c4" onclick="check(c4)">
+            <img src="">
+        </div>
+        <div class="case c5" id="c5" onclick="check(c5)">
+            <img src="">
+        </div>
+        <div class="case c6" id="c6" onclick="check(c6)" >
+            <img src="">
+        </div>
+        <div class="case c7" id="c7" onclick="check(c7)" >
+            <img src="">
+        </div>
+        <div class="case c8" id="c8" onclick="check(c8)" >
+            <img src="">
+        </div>
+        <div class="case c9" id="c9" onclick="check(c9)" >
+            <img src="">
+        </div>
+    </div>
+    <div class="box3">
+        <div class="player2">
+            <img class="o" src="o.png">
+            <div class="oname">
+                player2
+            </div>
+        </div>
+        <div class="score2">
+            <div class="oo" id="scoree2">0</div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="flow"> 
+       <div class="alert">   
+           <div class="match">
+               <img class="draw" src="draw.png">
+               <div>draw</div> 
+           </div>
+           <div class="comment">
+             Good game tho!!  
+           </div>
+           <div class="options">
+               <div class="mbox">
+                   <a href="Index.html">
+                   <img class="optionicons" src="home.png">
+                   </a>
+                   <div>Home</div>
+               </div>
+               <div class="mbox">
+                   <a href="settings.html">
+                   <img class="optionicons" src="setting.png">
+                   </a>
+                   <div>settings</div>
+               </div>
+               <div class="mbox">
+                   <img class="optionicons" src="restart.png" onclick="act()">
+                   <div>restart</div>
+               </div>
+               <div class="mbox">
+                   <img class="optionicons" src="resume.png" onclick="resume()">
+                   <div>resume</div>
+               </div>
+           </div>
+       </div> 
+    </div>
+    
+    
+    
+    <div class="flow1"> 
+       <div class="alert1">   
+           <div class="match1">
+               <img class="draw1" src="pause.png">
+               <div>Pause</div> 
+           </div>
+           <div class="options1">
+               <div class="mbox1">
+                   <a href="index.html">
+                   <img class="optionicons1" src="home.png">
+                   </a>
+                   <div>Home</div>
+               </div>
+               <div class="mbox1">
+                   <a href="settings.html">
+                   <img class="optionicons1" src="setting.png">
+                   </a>
+                   <div>settings</div>
+               </div>
+               <div class="mbox1">
+                   <img class="optionicons1" src="restart.png" onclick="act()">
+                   <div>restart</div>
+               </div>
+           </div>
+       </div>
+       <img class="finish" src="close.png" onclick="clos()">
+    </div>
+     
+    
+    <audio src="win.mp3" type="audio/mpeg" id="win"></audio>
+    <audio src="lost.mp3" type="audio/mpeg" id="lost"></audio>
+    <script src="game.js"></script>
+</body>
+</html>

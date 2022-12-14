@@ -1,0 +1,72 @@
+body{
+    background-color: #444444;
+}
+body.light-mode{
+    background-color: white;
+}
+.box0{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    column-gap: 2rem;
+    margin-top: 3.1rem;
+}
+.title{
+    color: white;
+    font-size: 6rem;
+    font-family: serif;
+}
+body.light-mode .title{
+    color: #444444;
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+.name{
+    color: white;
+    font-size: 5.5rem;
+    margin-bottom: 10rem;
+    font-weight: bold;
+}
+body.light-mode .name{
+    color: #444444;
+}
+.box1{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   justify-content: center;
+   height: 104rem;
+   row-gap: 20px;
+}
+.btn1{
+   font-size: 3rem;
+   height: 9.1rem;
+   width: 37rem;
+   border: none;
+   color: black;   
+   background-color: #18ffff;
+   border-radius: 3rem;
+}
+body.light-mode .btn1{
+    color: #444444;
+    background-color: #13e2d9;
+}
+.btn2 {
+    background-color: transparent;
+    width: 10rem;
+    height: 10rem;
+    padding: 3px 0px 0px 0px;
+    border-radius: 100px;
+    border: none;
+    margin-top: 24rem;
+}
+.setting{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
+}
